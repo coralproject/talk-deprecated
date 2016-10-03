@@ -1,0 +1,20 @@
+{
+    "name": "basic_thread",
+    "pre_script": "",
+    "pst_script": "",
+    "params": [],
+    "queries": [
+      {
+        "name": "stream_comments_test",
+        "type": "pipeline",
+        "collection": "items",
+        "commands": [
+            {"$match": {"$or": [{"item_id": "#string:root_id"}, {"type": "comment"}]}}
+        ],
+        "indexes": [],
+        "return": true
+      }
+    ],
+    "enabled": true,
+    "explain": false
+}
