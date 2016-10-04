@@ -1,0 +1,11 @@
+{
+	"subject_types": [
+		"user"
+	],
+	"predicate": "flagged",
+	"object_types": [
+		"flag"
+	],
+	"in_string": "flagged",
+	"out_string": "flagged by"
+}
