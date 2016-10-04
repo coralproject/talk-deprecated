@@ -1,5 +1,5 @@
 {
-  "name": "comments_on_comment",
+  "name": "comments_thread",
   "collection": "items",
   "start_type": "comment",
   "path": [

@@ -1,5 +1,5 @@
 {
-  "name": "comments_on_asset",
+  "name": "comments_stream",
   "start_type": "asset",
   "collection": "items",
   "path": [
