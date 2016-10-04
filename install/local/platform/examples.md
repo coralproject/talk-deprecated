@@ -3,7 +3,7 @@
 ## All Comments on a Single Article
 
 ```
-/v1/exec/basic_thread/view/comment_stream/:article_id
+/v1/exec/basic_thread/view/comment_stream/:asset_id
 ```
 
 ## All Comments on a Comment
@@ -14,5 +14,8 @@
 
 ## Item Counts against a view by type
 
+```
+/v1/exec/count/view/comment_stream/:asset_id
+```
 
 ## Get a single item and all related items
