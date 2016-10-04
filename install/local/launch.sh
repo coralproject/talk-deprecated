@@ -18,6 +18,8 @@ else
 	echo "Shelf found, no need to get it"
 fi
 
+
+
 startPath = $(pwd)
 
 mongod&
@@ -64,15 +66,15 @@ $GOPATH/bin/sponged&
 lsof -i tcp:16182 | awk 'NR>1 {print $2}' | xargs kill
 $GOPATH/bin/xeniad&
 
+cd $startPath
 
 echo ""
 echo "##################################"
 echo "Configuring the platform for Talk."
 echo "##################################"
-cd $startPath
-xenia pattern upsert -p platform/patterns/
-xenia relationship upsert -p platform/relationships/
-xenia view upsert -p platform/views/
-
+xenia pattern upsert -p ./platform/patterns/
+xenia relationship upsert -p ./platform/relationships/
+xenia view upsert -p ./platform/views/
+xenia query upsert -p platform/querySets/
 
 
