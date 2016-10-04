@@ -6,7 +6,8 @@ Clone this repo and run the launch script.
 
 ```
 git clone https://github.com/coralproject/talk.git
-talk/install/local/launch.sh
+cd talk/install/local/
+./launch.sh
 ```
 
 ## Requirements
