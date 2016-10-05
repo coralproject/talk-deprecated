@@ -1,0 +1,13 @@
+{
+  "name": "comments_stream",
+  "start_type": "asset",
+  "collection": "items",
+  "path": [
+    {
+      "level": 1,
+      "direction": "out",
+      "predicate": "on",
+      "tag": "comment"
+    }
+  ]
+}
