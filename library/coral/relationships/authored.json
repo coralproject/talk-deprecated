@@ -2,7 +2,7 @@
 	"subject_types": [
 		"user"
 	],
-	"predicate": "authored",
+	"predicate": "author",
 	"object_types": [
 		"comment"
 	],

@@ -3,26 +3,20 @@
 	"inferences": [
 		{
 			"related_ID_field": "author_id",
-			"predicate": "authored",
+			"predicate": "author",
 			"direction": "in",
 			"required": false
 		},
 		{
 			"related_ID_field": "parent_id",
-			"predicate": "parented_by",
+			"predicate": "parent",
 			"direction": "out",
 			"required": false
 		},
 		{
-			"related_ID_field": "asset_id",
-			"predicate": "on",
+			"related_ID_field": "context_id",
+			"predicate": "context",
 			"direction": "out",
-			"required": true
-		},
-		{
-			"related_ID_field": "status",
-			"predicate": "moderated",
- 			"direction": "out",
 			"required": false
 		}
 	]

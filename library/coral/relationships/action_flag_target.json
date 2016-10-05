@@ -2,10 +2,10 @@
 	"subject_types": [
 		"flag"
 	],
-	"predicate": "flagged",
+	"predicate": "flag",
 	"object_types": [
 		"comment"
 	],
-	"in_string": "flagged",
-	"out_string": "flagged by"
+	"in_string": "is on",
+	"out_string": "has"
 }

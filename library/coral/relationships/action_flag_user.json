@@ -2,10 +2,10 @@
 	"subject_types": [
 		"user"
 	],
-	"predicate": "flagged",
+	"predicate": "flags",
 	"object_types": [
 		"flag"
 	],
-	"in_string": "flagged",
-	"out_string": "flagged by"
+	"in_string": "creates",
+	"out_string": "created by"
 }

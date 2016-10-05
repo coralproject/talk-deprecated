@@ -1,12 +1,12 @@
 {
 	"name": "thread",
 	"collection": "items",
-	"start_type": "asset",
+	"start_type": "page",
 	"path": [
 		{
 			"level": 1,
-			"direction": "in",
-			"predicate": "on",
+			"direction": "out",
+			"predicate": "context",
 			"tag": "comment"
 		},
 		{

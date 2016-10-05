@@ -1,0 +1,11 @@
+{
+	"subject_types": [
+		"comment"
+	],
+	"predicate": "context",
+	"object_types": [
+		"page"
+	],
+	"in_string": "in context of",
+	"out_string": "is context for"
+}
