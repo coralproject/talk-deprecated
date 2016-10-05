@@ -11,16 +11,14 @@ echo ""
 echo "#################################################"
 echo ""
 
+startPath = $(pwd)
+
 if [ ! -d "$GOPATH/src/github.com/coralproject/shelf" ]; then
 	echo "Getting github.com/coralproject/shelf"
 	go get github.com/coralproject/shelf
-else 
+else
 	echo "Shelf found, no need to get it"
 fi
-
-
-
-startPath = $(pwd)
 
 mongod&
 source $GOPATH/src/github.com/coralproject/shelf/config/localhost.cfg
@@ -36,24 +34,23 @@ go install
 
 echo "Building Sponge Daemon"
 cd $GOPATH/src/github.com/coralproject/shelf/cmd/sponged
-go install 
+go install
 
 echo "Building Wire CLI"
 cd $GOPATH/src/github.com/coralproject/shelf/cmd/wire
-go install 
+go install
 
 echo "Building Xenia CLI"
 cd $GOPATH/src/github.com/coralproject/shelf/cmd/xenia
-go install 
+go install
 
 echo "Building Xenia Daemon"
 cd $GOPATH/src/github.com/coralproject/shelf/cmd/xeniad
-go install 
+go install
 
 echo "Building Coral Daemon"
 cd $GOPATH/src/github.com/coralproject/shelf/cmd/corald
-go install 
-
+go install
 
 
 echo "##################################"
@@ -68,13 +65,13 @@ $GOPATH/bin/xeniad&
 
 cd $startPath
 
+talkPlatform = "../../library/coral"
+
 echo ""
 echo "##################################"
 echo "Configuring the platform for Talk."
 echo "##################################"
-xenia pattern upsert -p ./platform/patterns/
-xenia relationship upsert -p ./platform/relationships/
-xenia view upsert -p ./platform/views/
-xenia query upsert -p platform/querySets/
-
-
+xenia pattern upsert -p $talkPlatform/patterns/
+xenia relationship upsert -p $talkPlatform/relationships/
+xenia view upsert -p $talkPlatform/views/
+xenia query upsert -p $talkPlatform/querySets/
