@@ -1,0 +1,11 @@
+{
+	"type": "asset",
+	"inferences": [
+		{
+			"related_ID_field": "section_id",
+			"predicate": "in",
+			"direction": "in",
+			"required": false
+		}
+	]
+}

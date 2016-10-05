@@ -1,0 +1,11 @@
+{
+	"type": "section",
+	"inferences": [
+		{
+			"related_ID_field": "site_id",
+			"predicate": "contains",
+			"direction": "in",
+			"required": false
+		}
+	]
+}

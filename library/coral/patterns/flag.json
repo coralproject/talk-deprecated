@@ -1,0 +1,17 @@
+{
+	"type": "flag",
+	"inferences": [
+		{
+			"related_ID_field": "actor_id",
+			"predicate": "flagged",
+			"direction": "out",
+			"required": true
+		},
+		{
+			"related_ID_field": "target_id",
+			"predicate": "flagged",
+			"direction": "in",
+			"required": true
+		}
+	]
+}

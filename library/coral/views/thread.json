@@ -1,0 +1,25 @@
+{
+	"name": "thread",
+	"collection": "items",
+	"start_type": "asset",
+	"path": [
+		{
+			"level": 1,
+			"direction": "in",
+			"predicate": "on",
+			"tag": "comment"
+		},
+		{
+			"level": 2,
+			"direction": "out",
+			"predicate": "flagged",
+			"tag": "flag"
+		},
+		{
+			"level": 3,
+			"direction": "out",
+			"predicate": "flagged",
+			"tag": "flagger"
+		}
+	]
+}

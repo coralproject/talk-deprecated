@@ -1,0 +1,11 @@
+{
+	"type": "stream",
+	"inferences": [
+		{
+			"related_ID_field": "asset_id",
+			"predicate": "on",
+			"direction": "in",
+			"required": false
+		}
+	]
+}
