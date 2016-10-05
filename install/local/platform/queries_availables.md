@@ -1,4 +1,4 @@
-# Examples
+# Queries Availables
 
 ## All Comments on a Single Article
 
@@ -19,3 +19,7 @@
 ```
 
 ## Get a single item and all related items
+
+```
+/v1/exec/view/comment/:comment_id
+```

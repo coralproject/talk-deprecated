@@ -1,0 +1,13 @@
+{
+  "name": "comment",
+  "collection": "items",
+  "start_type": "comment",
+  "path": [
+    {
+      "level": 1,
+      "direction": "in",
+      "predicate": "on",
+      "tag": "comment"
+    }
+  ]
+}
