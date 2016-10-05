@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "#################################################"
 echo "Prototypical launcher the Coral Platform services"
 echo "#################################################"
@@ -11,7 +13,7 @@ echo ""
 echo "#################################################"
 echo ""
 
-startPath = $(pwd)
+startPath=$(pwd)
 
 if [ ! -d "$GOPATH/src/github.com/coralproject/shelf" ]; then
 	echo "Getting github.com/coralproject/shelf"
@@ -65,7 +67,7 @@ $GOPATH/bin/xeniad&
 
 cd $startPath
 
-talkPlatform = "../../library/coral"
+talkPlatform="../../library/coral"
 
 echo ""
 echo "##################################"
