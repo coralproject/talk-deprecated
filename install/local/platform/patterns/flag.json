@@ -2,13 +2,13 @@
 	"type": "flag",
 	"inferences": [
 		{
-			"related_ID_field": "actor_id",
-			"predicate": "flagged",
+			"related_ID_field": "user_id",
+			"predicate": "flagged_by",
 			"direction": "out",
 			"required": true
 		},
 		{
-			"related_ID_field": "target_id",
+			"related_ID_field": "item_id",
 			"predicate": "flagged",
 			"direction": "in",
 			"required": true
