@@ -17,9 +17,12 @@
 ```
 /v1/exec/count/view/comment_stream/:asset_id
 ```
+User Case: https://www.pivotaltracker.com/n/projects/1863625/stories/130309983
 
 ## Get a single item and all related items
 
 ```
 /v1/exec/view/comment/:comment_id
 ```
+
+User Case: https://www.pivotaltracker.com/n/projects/1863625/stories/130310029
