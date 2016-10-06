@@ -9,7 +9,7 @@
         "type": "pipeline",
         "collection": "view",
         "commands": [
-          { "$skip": 0 }
+            {"$skip": 0}
         ],
         "indexes": [],
         "return": true

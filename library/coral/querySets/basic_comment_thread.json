@@ -1,5 +1,5 @@
 {
-    "name": "basic_thread",
+    "name": "basic_comment_thread",
     "pre_script": "",
     "pst_script": "",
     "params": [],
@@ -9,7 +9,7 @@
         "type": "pipeline",
         "collection": "items",
         "commands": [
-            {"$match": {"$or": [{"item_id": "#string:root_id"}, {"type": "comment"}]}}
+            {"$match": {"$or": [{"item_id": "#string:comment_id"}, {"type": "comment"}]}}
         ],
         "indexes": [],
         "return": true
