@@ -1,0 +1,11 @@
+{
+	"type": "page",
+	"inferences": [
+		{
+			"related_ID_field": "comment_id",
+			"predicate": "context",
+			"direction": "out",
+			"required": false
+		}
+	]
+}

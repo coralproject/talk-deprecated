@@ -1,15 +1,15 @@
 {
-    "name": "basic_thread",
+    "name": "count-view",
     "pre_script": "",
     "pst_script": "",
     "params": [],
     "queries": [
       {
-        "name": "stream_comments",
+        "name": "count",
         "type": "pipeline",
-        "collection": "items",
+        "collection": "view",
         "commands": [
-            {"$match": {"$or": [{"item_id": "#string:root_id"}, {"type": "comment"}]}}
+             { "$group": { "_id": null, "count": { "$sum": 1 } } }
         ],
         "indexes": [],
         "return": true

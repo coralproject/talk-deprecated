@@ -12,13 +12,13 @@
 		{
 			"level": 2,
 			"direction": "out",
-			"predicate": "flagged",
+			"predicate": "flags",
 			"tag": "flag"
 		},
 		{
 			"level": 3,
 			"direction": "out",
-			"predicate": "flagged",
+			"predicate": "flags",
 			"tag": "flagger"
 		}
 	]

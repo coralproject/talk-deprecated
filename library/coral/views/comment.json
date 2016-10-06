@@ -6,8 +6,20 @@
     {
       "level": 1,
       "direction": "in",
-      "predicate": "on",
-      "tag": "comment"
+      "predicate": "author",
+      "tag": "author"
+    },
+    {
+      "level": 2,
+      "direction": "out",
+      "predicate": "parent",
+      "tag": "parent"
+    },
+    {
+      "level": 3,
+      "direction": "out",
+      "predicate": "context",
+      "tag": "context"
     }
   ]
 }
