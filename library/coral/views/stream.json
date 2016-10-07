@@ -5,9 +5,15 @@
   "path": [
     {
       "level": 1,
-      "direction": "out",
-      "predicate": "on",
+      "direction": "in",
+      "predicate": "context",
       "tag": "comment"
+    },
+    {
+      "level": 2,
+      "direction": "in",
+      "predicate": "author",
+      "tag": "author"
     }
   ]
 }
