@@ -73,7 +73,7 @@ echo ""
 echo "##################################"
 echo "Configuring the platform for Talk."
 echo "##################################"
-xenia pattern upsert -p $talkPlatform/patterns/
+sponge pattern upsert -p $talkPlatform/patterns/
 xenia relationship upsert -p $talkPlatform/relationships/
 xenia view upsert -p $talkPlatform/views/
 xenia query upsert -p $talkPlatform/querySets/
