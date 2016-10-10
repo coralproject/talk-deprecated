@@ -1,5 +1,7 @@
 # Structure
 
+## Option 1
+
 ![](./TalkModel_Option1.png)
 
 #### Patterns:
@@ -10,7 +12,7 @@
     "inferences": [
       {
         "related_ID_field": "author_id",
-        "predicate": "author",
+        "predicate": "authors",
         "direction": "out",
         "required": false
       },
@@ -22,14 +24,20 @@
       },
       {
         "related_ID_field": "context_id",
-        "predicate": "context",
+        "predicate": "is_in_the_context_of",
         "direction": "in",
         "required": false
       },
       {
         "related_ID_field": "status_id",
-        "predicate": "has",
+        "predicate": "moderated_as",
         "direction": "in",
+        "required": false
+      },
+      {
+        "related_ID_field": "flag_id",
+        "predicate": "flags",
+        "direction": "out",
         "required": false
       }
     ]
@@ -39,7 +47,58 @@
     "inferences": [
       {
         "related_ID_field": "comment_id",
-        "predicate": "context",
+        "predicate": "is_in_the_context_of",
+        "direction": "out",
+        "required": false
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "inferences": [
+      {
+        "related_ID_field": "comment_id",
+        "predicate": "authors",
+        "direction": "in",
+        "required": false
+      },
+      {
+        "related_ID_field": "flag_id",
+        "predicate": "flags",
+        "direction": "in",
+        "required": false
+      }
+    ]
+  },
+  {
+    "type": "flag",
+    "inferences": [
+      {
+        "related_ID_field": "comment_id",
+        "predicate": "is_flag_by",
+        "direction": "out",
+        "required": false
+      },
+      {
+        "related_ID_field": "user_id",
+        "predicate": "flags",
+        "direction": "out",
+        "required": false
+      }
+    ]
+  },
+  {
+    "type": "status",
+    "inferences": [
+      {
+        "related_ID_field": "comment_id",
+        "predicate": "moderated_as",
+        "direction": "out",
+        "required": false
+      },
+      {
+        "related_ID_field": "user_id",
+        "predicate": "moderates",
         "direction": "out",
         "required": false
       }
@@ -55,7 +114,7 @@
     "subject_types": [
       "user"
     ],
-    "predicate": "author",
+    "predicate": "authors",
     "object_types": [
       "comment"
     ],
@@ -64,14 +123,73 @@
   },
   {
     "subject_types": [
-      "comment"
+      "user"
     ],
-    "predicate": "context",
+    "predicate": "flags",
     "object_types": [
+      "flag"
+    ],
+    "in_string": "flagged",
+    "out_string": "flagged by"
+  },
+  {
+    "subject_types": [
+      "user"
+    ],
+    "predicate": "moderates",
+    "object_types": [
+      "status"
+    ],
+    "in_string": "moderated",
+    "out_string": "moderated by"
+  },
+  {
+    "subject_types": [
       "page"
     ],
-    "in_string": "in context of",
-    "out_string": "is context for"
+    "predicate": "is_context_for",
+    "object_types": [
+      "comment"
+    ],
+    "in_string": "is context for",
+    "out_string": "in the context of"
+  },
+  {
+    "subject_types": [
+      "comment"
+    ],
+    "predicate": "parent",
+    "object_types": [
+      "comment"
+    ],
+    "in_string": "parents",
+    "out_string": "is the child of"
+  },
+  {
+    "subject_types": [
+      "comment"
+    ],
+    "predicate": "moderated_as",
+    "object_types": [
+      "status"
+    ],
+    "in_string": "is moderated as",
+    "out_string": "moderates"
+  },
+  {
+    "subject_types": [
+      "comment"
+    ],
+    "predicate": "is_flag_by",
+    "object_types": [
+      "flag"
+    ],
+    "in_string": "is context for",
+    "out_string": "in the context of"
   }
 ]
 ```
+
+## Option 2
+
+![](./TalkModel_Option2.png)
