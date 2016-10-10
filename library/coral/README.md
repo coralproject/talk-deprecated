@@ -33,9 +33,9 @@ User Case: [As a reader, I can see how many comments there are so that I can gau
 User Case: [As a reader, I want to view a permalink for the comment so that I can easily reference that comment.](https://www.pivotaltracker.com/n/projects/1863625/stories/130310029)
 
 ```
-/v1/exec/all/view/comment/:comment_id
+/v1/exec/comment/:comment_id
 ```
 
-#### View "Comment"
+#### Query "Comment"
 
 Get all the related items to the comment "comment_id".

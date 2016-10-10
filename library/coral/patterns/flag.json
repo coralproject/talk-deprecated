@@ -5,13 +5,13 @@
 			"related_ID_field": "user_id",
 			"predicate": "flags",
 			"direction": "out",
-			"required": true
+			"required": false
 		},
 		{
 			"related_ID_field": "item_id",
 			"predicate": "flag",
 			"direction": "in",
-			"required": true
+			"required": false
 		}
 	]
 }
