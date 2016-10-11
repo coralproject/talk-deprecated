@@ -13,14 +13,21 @@ POST /v1/exec/view/comment_stream/:context_id
 ```
 with the query 'all' in the body.
 
-#### View "comment_stream"
-#### Query "basic_thread"
+* View "comment_stream"
+* Query "all"
+
+*Example: ```curl -X GET 127.0.0.1:16180/v1/exec/all/view/comments_stream/22```*
 
 ## All Comments on a Comment
 
 ```
-/v1/exec/basic_thread/view/comment_thread/:comment_id
+/v1/exec/all/view/comment_thread/:comment_id
 ```
+
+* View "comment_thread"
+* Query "all"
+
+*Example: ```curl -X GET http://127.0.0.1:16180/v1/exec/all/view/comment_thread/44```*
 
 ## Item Counts all the comments on a Page
 
@@ -37,13 +44,14 @@ POST /v1/exec/view/comment_stream/:context_id
 ```
 with the query 'count' in the body.
 
-#### View "comment_stream"
-#### Query Set "count"
+* View "comment_stream"
+* Query Set "count"
 
+*Example: ```curl -X GET 127.0.0.1:16180/v1/exec/count/view/comments_stream/22```*
 
 ## Get a single item and all related items
 
-*To Do*
+*To Do. Block by https://github.com/coralproject/shelf/issues/245*
 
 User Case: [As a reader, I want to view a permalink for the comment so that I can easily reference that comment.](https://www.pivotaltracker.com/n/projects/1863625/stories/130310029)
 
@@ -51,8 +59,4 @@ User Case: [As a reader, I want to view a permalink for the comment so that I ca
 /v1/exec/comment/:comment_id
 ```
 
-#### Query "Comment"
-
-*To Do*
-
-Get all the related items to the comment "comment_id".
+* Query "Comment"

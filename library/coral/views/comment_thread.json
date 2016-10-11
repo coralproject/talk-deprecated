@@ -1,25 +1,13 @@
 {
 	"name": "comment_thread",
 	"collection": "items",
-	"start_type": "page",
+	"start_type": "comment",
 	"path": [
 		{
 			"level": 1,
 			"direction": "out",
-			"predicate": "context",
+			"predicate": "parent",
 			"tag": "comment"
-		},
-		{
-			"level": 2,
-			"direction": "out",
-			"predicate": "flags",
-			"tag": "flag"
-		},
-		{
-			"level": 3,
-			"direction": "out",
-			"predicate": "flags",
-			"tag": "flagger"
 		}
 	]
 }
