@@ -2,8 +2,8 @@
     "type": "page",
     "inferences": [
       {
-        "related_ID_field": "data.comment_id",
-        "predicate": "is_in_the_context_of",
+        "related_ID_field": "comment_id",
+        "predicate": "context",
         "direction": "out",
         "required": false
       }

@@ -2,19 +2,19 @@
 	"type": "comment",
 	"inferences": [
 		{
-			"related_ID_field": "data.author_id",
+			"related_ID_field": "author_id",
 			"predicate": "author",
 			"direction": "in",
 			"required": false
 		},
 		{
-			"related_ID_field": "data.parent_id",
+			"related_ID_field": "parent_id",
 			"predicate": "parent",
 			"direction": "out",
 			"required": false
 		},
 		{
-			"related_ID_field": "data.context_id",
+			"related_ID_field": "context_id",
 			"predicate": "context",
 			"direction": "out",
 			"required": false
