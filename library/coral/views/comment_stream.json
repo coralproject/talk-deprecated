@@ -1,7 +1,7 @@
 {
   "name": "comments_stream",
-  "start_type": "page",
   "collection": "items",
+  "start_type": "page",
   "path": [
     {
       "level": 1,
@@ -12,8 +12,8 @@
     {
       "level": 2,
       "direction": "in",
-      "predicate": "author",
-      "tag": "author"
+      "predicate": "authors",
+      "tag": "user"
     }
   ]
 }

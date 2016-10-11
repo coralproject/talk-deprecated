@@ -1,15 +1,15 @@
 {
-    "type": "flag",
+    "type": "status",
     "inferences": [
       {
         "related_ID_field": "data.comment_id",
-        "predicate": "is_flag_by",
+        "predicate": "moderated_as",
         "direction": "out",
         "required": false
       },
       {
         "related_ID_field": "data.user_id",
-        "predicate": "flags",
+        "predicate": "moderates",
         "direction": "out",
         "required": false
       }
