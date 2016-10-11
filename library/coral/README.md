@@ -34,7 +34,7 @@ with the query 'all' in the body.
 User Case: [As a reader, I can see how many comments there are so that I can gauge activity in a comment thread.](https://www.pivotaltracker.com/n/projects/1863625/stories/130309983)
 
 ```
-/v1/exec/count/view/comment_stream/:context_id
+/v1/exec/count-view/view/comment_stream/:context_id
 ```
 
 or
@@ -42,12 +42,12 @@ or
 ```
 POST /v1/exec/view/comment_stream/:context_id
 ```
-with the query 'count' in the body.
+with the query 'count-view' in the body.
 
 * View "comment_stream"
 * Query Set "count"
 
-*Example: ```curl -X GET 127.0.0.1:16180/v1/exec/count/view/comments_stream/22```*
+*Example: ```curl -X GET 127.0.0.1:16180/v1/exec/count-view/view/comments_stream/22```*
 
 ## Get a single item and all related items
 
