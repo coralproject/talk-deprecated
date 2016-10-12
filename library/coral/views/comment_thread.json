@@ -10,7 +10,55 @@
 					"level": 1,
 					"direction": "in",
 					"predicate": "parent",
-					"tag": "child"
+					"tag": "children"
+				},
+				{
+					"level": 2,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 3,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 4,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 5,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 6,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 7,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 8,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 9,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
 				}
 			]
 		},
@@ -22,6 +70,17 @@
 					"direction": "in",
 					"predicate": "author",
 					"tag": "author"
+				}
+			]
+		},
+		{
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "out",
+					"predicate": "context",
+					"tag": "page"
 				}
 			]
 		}
