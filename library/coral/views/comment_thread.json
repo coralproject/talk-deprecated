@@ -16,23 +16,6 @@
 				{
 					"level": 2,
 					"direction": "in",
-					"predicate": "parent",
-					"tag": "children"
-				}
-			]
-		},
-		{
-			"strict_path": false,
-			"path_segments": [
-				{
-					"level": 1,
-					"direction": "in",
-					"predicate": "parent",
-					"tag": "children"
-				},
-				{
-					"level": 2,
-					"direction": "in",
 					"predicate": "author",
 					"tag": "author"
 				}
