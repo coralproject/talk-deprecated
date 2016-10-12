@@ -2,12 +2,28 @@
 	"name": "comment_thread",
 	"collection": "items",
 	"start_type": "comment",
-	"path": [
+	"paths": [
 		{
-			"level": 1,
-			"direction": "out",
-			"predicate": "parent",
-			"tag": "comment"
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "child"
+				}
+			]
+		},
+		{
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "in",
+					"predicate": "author",
+					"tag": "author"
+				}
+			]
 		}
 	]
 }
