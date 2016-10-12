@@ -22,6 +22,9 @@ else
 	echo "Shelf found, no need to get it"
 fi
 
+cd $GOPATH/src/github.com/coralproject/shelf/
+git pull
+
 mongod&
 source $GOPATH/src/github.com/coralproject/shelf/config/localhost.cfg
 
@@ -73,7 +76,7 @@ echo ""
 echo "##################################"
 echo "Configuring the platform for Talk."
 echo "##################################"
-sponge pattern upsert -p $talkPlatform/patterns/
-xenia relationship upsert -p $talkPlatform/relationships/
-xenia view upsert -p $talkPlatform/views/
-xenia query upsert -p $talkPlatform/querySets/
+$GOPATH/bin/sponge pattern upsert -p $talkPlatform/patterns/
+$GOPATH/bin/xenia relationship upsert -p $talkPlatform/relationships/
+$GOPATH/bin/xenia view upsert -p $talkPlatform/views/
+$GOPATH/bin/xenia query upsert -p $talkPlatform/querySets/
