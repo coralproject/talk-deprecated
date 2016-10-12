@@ -18,7 +18,15 @@ with the query 'all' in the body.
 
 *Example: ```curl -X GET 127.0.0.1:16180/v1/exec/all/view/comments_stream/22```*
 
-## All Comments on a Comment
+## A Comment Thread
+
+A thread is a single comment and:
+
+* author
+* context (page)
+* children
+* children's authors
+
 
 ```
 /v1/exec/all/view/comment_thread/:comment_id
