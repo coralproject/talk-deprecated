@@ -1,19 +1,26 @@
 {
-  "name": "comments_stream",
+  "name": "comment_stream",
   "collection": "items",
   "start_type": "page",
-  "path": [
+  "return_root": true,
+  "paths": [
     {
-      "level": 1,
-      "direction": "in",
-      "predicate": "context",
-      "tag": "comment"
-    },
-    {
-      "level": 2,
-      "direction": "in",
-      "predicate": "author",
-      "tag": "user"
+      "strict_path": true,
+      "path_segments": [
+        {
+          "level": 1,
+          "direction": "in",
+          "predicate": "context",
+          "tag": "comment"
+        },
+        {
+          "level": 2,
+          "direction": "in",
+          "predicate": "author",
+          "tag": "user"
+        }
+      ] 
     }
   ]
+     
 }

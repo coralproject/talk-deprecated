@@ -2,12 +2,69 @@
 	"name": "comment_thread",
 	"collection": "items",
 	"start_type": "comment",
-	"path": [
+	"return_root": true,
+	"paths": [
 		{
-			"level": 1,
-			"direction": "out",
-			"predicate": "parent",
-			"tag": "comment"
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 2,
+					"direction": "in",
+					"predicate": "author",
+					"tag": "author"
+				}
+			]
+		},
+		{
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 2,
+					"direction": "in",
+					"predicate": "parent",
+					"tag": "children"
+				},
+				{
+					"level": 3,
+					"direction": "in",
+					"predicate": "author",
+					"tag": "author"
+				}
+			]
+		},
+		{
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "in",
+					"predicate": "author",
+					"tag": "author"
+				}
+			]
+		},
+		{
+			"strict_path": false,
+			"path_segments": [
+				{
+					"level": 1,
+					"direction": "out",
+					"predicate": "context",
+					"tag": "page"
+				}
+			]
 		}
 	]
 }
