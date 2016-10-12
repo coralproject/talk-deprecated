@@ -1,6 +1,10 @@
 # Queries Available
 
-## All Comments on a Page
+## A Comment Stream
+
+A stream is a all the items related to a page:
+
+* comments and its author
 
 ```
 GET /v1/exec/all/view/comment_stream/:context_id
@@ -37,10 +41,11 @@ A thread is a single comment and:
 
 *Example: ```curl -X GET http://127.0.0.1:16180/v1/exec/all/view/comment_thread/44```*
 
+User Case: [As a reader, I want to view a permalink for the comment so that I can easily reference that comment.](https://www.pivotaltracker.com/n/projects/1863625/stories/130310029)
+
 ## Item Counts all the comments on a Page
 
-User Case: [As a reader, I can see how many comments there are so that I can gauge activity in a comment thread.](https://www.pivotaltracker.com/n/projects/1863625/stories/130309983)
-
+In this case we use the query 'count-view' to count items on the view 'comment_stream'
 ```
 /v1/exec/count-view/view/comment_stream/:context_id
 ```
@@ -57,14 +62,4 @@ with the query 'count-view' in the body.
 
 *Example: ```curl -X GET 127.0.0.1:16180/v1/exec/count-view/view/comments_stream/22```*
 
-## Get a single item and all related items
-
-*To Do. Block by https://github.com/coralproject/shelf/issues/245*
-
-User Case: [As a reader, I want to view a permalink for the comment so that I can easily reference that comment.](https://www.pivotaltracker.com/n/projects/1863625/stories/130310029)
-
-```
-/v1/exec/comment/:comment_id
-```
-
-* Query "Comment"
+User Case: [As a reader, I can see how many comments there are so that I can gauge activity in a comment thread.](https://www.pivotaltracker.com/n/projects/1863625/stories/130309983)
