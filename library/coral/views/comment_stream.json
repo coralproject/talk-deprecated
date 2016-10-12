@@ -1,7 +1,8 @@
 {
-  "name": "comments_stream",
+  "name": "comment_stream",
   "collection": "items",
   "start_type": "page",
+  "return_root": true,
   "paths": [
     {
       "strict_path": true,

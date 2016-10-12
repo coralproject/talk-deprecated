@@ -2,6 +2,7 @@
 	"name": "comment_thread",
 	"collection": "items",
 	"start_type": "comment",
+	"return_root": true,
 	"paths": [
 		{
 			"strict_path": false,
