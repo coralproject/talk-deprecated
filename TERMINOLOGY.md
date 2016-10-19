@@ -31,8 +31,7 @@ This is a guide to have a common language to talk about "Talk".
 * Protected Profile: information about users that only moderators and admins can see
 
 * Queue - Group of items based on a query, aka - moderation queue
-* Actions - Likes, flags, moderations, etc...
-* Target - The comment or user where the action is on.
+* Target - The item/s on which an action is performed..
 
 ## Item Types
 
