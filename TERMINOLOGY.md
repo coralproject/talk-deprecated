@@ -6,7 +6,7 @@ This is a guide to have a common language to talk about "Talk".
 
 * Site - a top level site, aka nytimes.com
 * Section - the section of a site, aka, Politics
-* Page/Asset? - An article/video/or other ‘page’ of a site identified by URL.
+* Page - An article/video/or other ‘page’ of a site identified by URL.
 * Journalist - Person who wrote the article/page/etc...
 * Coral Space? - Everything we put on a page: comment box, ToS, Stream, etc…
 * Stream - All the activity on a certain page/asset. Container for Comments, actions, user
