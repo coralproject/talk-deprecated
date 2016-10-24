@@ -9,7 +9,7 @@ This is a guide to have a common language to talk about "Talk".
 * Page - An article/video/or other ‘page’ of a site identified by URL.
 * Journalist - Person who wrote the article/page/etc...
 * Coral Space? - Everything we put on a page: comment box, ToS, Stream, etc…
-* Stream - All the activity on a certain page/asset. Container for Comments, actions, user
+* Stream - All the activity on a certain page. Container for Comments, actions, user
 * Thread - defined by a parent and everything below. All replies to a comment and their replies, etc…
 * Comment - a kind of user-generated content submitted by a comment author
   * A parent comment has replies to it
@@ -37,7 +37,7 @@ This is a guide to have a common language to talk about "Talk".
 
 * Site
 * Section
-* Page/Asset
+* Page
 * User
 * Comment
 
