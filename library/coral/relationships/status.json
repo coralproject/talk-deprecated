@@ -1,0 +1,11 @@
+{
+	"subject_types": [
+		"comment"
+	],
+	"predicate": "has_status",
+	"object_types": [
+		"status"
+	],
+	"in_string": "provides status for",
+	"out_string": "has status"
+}

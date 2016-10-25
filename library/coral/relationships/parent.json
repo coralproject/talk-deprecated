@@ -1,11 +1,11 @@
 {
-  "subject_types": [
-    "comment"
-  ],
-  "predicate": "parent",
-  "object_types": [
-    "comment"
-  ],
-  "in_string": "parents",
-  "out_string": "is the child of"
+	"subject_types": [
+		"comment"
+	],
+	"predicate": "parented_by",
+	"object_types": [
+		"comment"
+	],
+	"in_string": "parents",
+	"out_string": "is the child of"
 }
