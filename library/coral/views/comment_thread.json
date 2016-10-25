@@ -10,13 +10,13 @@
 				{
 					"level": 1,
 					"direction": "in",
-					"predicate": "parent",
-					"tag": "children"
+					"predicate": "parented_by",
+					"tag": "child"
 				},
 				{
 					"level": 2,
 					"direction": "in",
-					"predicate": "author",
+					"predicate": "authored",
 					"tag": "author"
 				}
 			]
@@ -27,19 +27,19 @@
 				{
 					"level": 1,
 					"direction": "in",
-					"predicate": "parent",
-					"tag": "children"
+					"predicate": "parented_by",
+					"tag": "child"
 				},
 				{
 					"level": 2,
 					"direction": "in",
-					"predicate": "parent",
-					"tag": "children"
+					"predicate": "parented_by",
+					"tag": "grandchild"
 				},
 				{
 					"level": 3,
 					"direction": "in",
-					"predicate": "author",
+					"predicate": "authored",
 					"tag": "author"
 				}
 			]
@@ -50,7 +50,7 @@
 				{
 					"level": 1,
 					"direction": "in",
-					"predicate": "author",
+					"predicate": "authored",
 					"tag": "author"
 				}
 			]
@@ -61,8 +61,8 @@
 				{
 					"level": 1,
 					"direction": "out",
-					"predicate": "context",
-					"tag": "page"
+					"predicate": "in_the_context_of",
+					"tag": "article"
 				}
 			]
 		}

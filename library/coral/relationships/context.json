@@ -2,9 +2,9 @@
 	"subject_types": [
 		"comment"
 	],
-	"predicate": "context",
+	"predicate": "in_the_context_of",
 	"object_types": [
-		"page"
+		"article"
 	],
 	"in_string": "in context of",
 	"out_string": "is context for"
