@@ -63,3 +63,21 @@ with the query 'count-view' in the body.
 *Example: ```curl -X GET 127.0.0.1:16180/v1/exec/count-view/view/comments_stream/22```*
 
 User Case: [As a reader, I can see how many comments there are so that I can gauge activity in a comment thread.](https://www.pivotaltracker.com/n/projects/1863625/stories/130309983)
+
+
+## Action on a Comment by a User
+
+Action could be:
+
+* flagged_by
+* liked_by
+
+```
+POST /v1/action/:action/user/:user_id/on/item/:comment_id
+```
+
+```
+DELETE /v1/action/:action/user/:user_id/on/item/:comment_id
+```
+
+User Case: [.](https://www.pivotaltracker.com/...)
