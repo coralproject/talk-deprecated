@@ -15,6 +15,8 @@ echo ""
 
 startPath=$(pwd)
 
+source $startPath/localhost.cfg
+
 if [ ! -d "$GOPATH/src/github.com/coralproject/shelf" ]; then
 	echo "Getting github.com/coralproject/shelf"
 	go get github.com/coralproject/shelf
@@ -26,7 +28,6 @@ cd $GOPATH/src/github.com/coralproject/shelf/
 git pull
 
 mongod&
-source $GOPATH/src/github.com/coralproject/shelf/config/localhost.cfg
 
 echo "#####################"
 echo "Building Corald"
