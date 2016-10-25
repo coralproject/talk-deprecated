@@ -1,0 +1,11 @@
+{
+	"subject_types": [
+		"user"
+	],
+	"predicate": "authored",
+	"object_types": [
+		"comment"
+	],
+	"in_string": "authored by",
+	"out_string": "authored"
+}

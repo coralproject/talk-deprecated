@@ -3,19 +3,31 @@
 	"inferences": [
 		{
 			"related_ID_field": "author_id",
-			"predicate": "author",
+			"predicate": "authored",
 			"direction": "in",
 			"required": false
 		},
 		{
 			"related_ID_field": "parent_id",
-			"predicate": "parent",
+			"predicate": "parented_by",
 			"direction": "out",
 			"required": false
 		},
 		{
-			"related_ID_field": "context_id",
-			"predicate": "context",
+			"related_ID_field": "article_id",
+			"predicate": "in_the_context_of",
+			"direction": "out",
+			"required": true
+		},
+		{
+			"related_ID_field": "flag",
+			"predicate": "flagged",
+			"direction": "in",
+			"required": false
+		},
+		{
+			"related_ID_field": "status",
+			"predicate": "has_status",
 			"direction": "out",
 			"required": false
 		}

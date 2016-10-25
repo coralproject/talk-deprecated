@@ -1,22 +1,22 @@
 {
   "name": "comment_stream",
   "collection": "items",
-  "start_type": "page",
+  "start_type": "article",
   "return_root": true,
   "paths": [
     {
-      "strict_path": true,
+      "strict_path": false,
       "path_segments": [
         {
           "level": 1,
           "direction": "in",
-          "predicate": "context",
+          "predicate": "in_the_context_of",
           "tag": "comment"
         },
         {
           "level": 2,
           "direction": "in",
-          "predicate": "author",
+          "predicate": "authored",
           "tag": "user"
         }
       ] 
