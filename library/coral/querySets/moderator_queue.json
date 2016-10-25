@@ -1,0 +1,21 @@
+{
+    "name": "moderator_queue",
+    "pre_script": "",
+    "pst_script": "",
+    "params": [],
+    "queries": [
+      {
+        "name": "stream_comments",
+        "type": "pipeline",
+        "collection": "view",
+        "commands": [
+            {"$match": {"$or": [{"item_id": "#string:comment_id"}, {"type": "comment"}]}},
+            {"$match": {"$and": [{"status": "untouched"}, {"flagged_by": {"$exists": true}}]}}
+        ],
+        "indexes": [],
+        "return": true
+      }
+    ],
+    "enabled": true,
+    "explain": false
+}
