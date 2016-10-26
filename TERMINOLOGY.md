@@ -6,10 +6,10 @@ This is a guide to have a common language to talk about "Talk".
 
 * Site - a top level site, aka nytimes.com
 * Section - the section of a site, aka, Politics
-* Page - An article/video/or other ‘page’ of a site identified by URL.
-* Journalist - Person who wrote the article/page/etc...
-* Coral Space? - Everything we put on a page: comment box, ToS, Stream, etc…
-* Stream - All the activity on a certain page. Container for Comments, actions, user
+* Asset - An article/video/etc identified by URL.
+* Journalist - Person who wrote the asset.
+* Coral Space? - Everything we put on a asset: comment box, ToS, Stream, etc…
+* Stream - All the activity on a certain asset. Container for Comments, actions, user
 * Thread - defined by a parent and everything below. All replies to a comment and their replies, etc…
 * Comment - a kind of user-generated content submitted by a comment author
   * A parent comment has replies to it
@@ -37,7 +37,7 @@ This is a guide to have a common language to talk about "Talk".
 
 * Site
 * Section
-* Page
+* Asset
 * User
 * Comment
 
@@ -65,8 +65,8 @@ Actions are a special class of items. They are performed by items (aka, users) o
 The key for a relationship is a predicate.  Relationships also have _in_string_ and _out_string_ that are used when describing the in and out relationships in language.
 
 Predicate: context
-In: A Comment is in_context_of a Page
-Out: A Page is_context_for Comments
+In: A Comment is in_context_of a Asset
+Out: A Asset is_context_for Comments
 
 Predicate: author
 In: A User authored a Comment
@@ -89,7 +89,7 @@ Out: A Comment is flagged by a Flag
 ### Type “Comment”
 * User author_id authored Comment
 * Comment parent by Comment parent_id
-* Comment in context of Page context_id
+* Comment in context of Asset context_id
 
 ### Type “Flag”
 * Flag created by User user_id
