@@ -15,9 +15,9 @@
         },
         {
           "level": 2,
-          "direction": "out",
+          "direction": "in",
           "predicate": "parented_by",
-          "tag": "comment"
+          "tag": "child"
         }
       ]
     }
