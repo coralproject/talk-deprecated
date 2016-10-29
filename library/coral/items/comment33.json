@@ -6,7 +6,8 @@
       {
         "body": "Something body like.",
         "title": "The comment",
-        "author_id": "11",
-        "asset_id": "22"
+        "author_id": "55",
+        "asset_id": "22",
+        "status": "untouched"
       }
   }

@@ -7,6 +7,7 @@
       "title": "The other comment",
       "author_id": "11",
       "asset_id": "22",
-      "parent_id": "33"
+      "parent_id": "33",
+      "status": "66"
     }
   }

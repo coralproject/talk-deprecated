@@ -17,6 +17,7 @@ This is a guide to have a common language to talk about "Talk".
   * A comment can be both a parent comment and a child of another comment
   * A top-level comment is a comment that is not a reply to any other comment
   * A nth-level comment refers to the number of replies away from the top-level comment
+  * Status refers to where the comment should be accepted or rejected. The default status is 'untouched'.
 
 * User - an item to represent a person using Talk. It could be a moderator, reader, etc.
 * User Roles:
@@ -29,6 +30,7 @@ This is a guide to have a common language to talk about "Talk".
 * Public Profile: information about users shown in public
 * Private Profile: information about users shown only to user about themselves
 * Protected Profile: information about users that only moderators and admins can see
+
 
 * Queue - Group of items based on a query, aka - moderation queue
 * Target - The item/s on which an action is performed..
