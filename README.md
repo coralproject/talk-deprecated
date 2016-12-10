@@ -1,5 +1,7 @@
 # Talk
 
+[![Join the chat at https://gitter.im/coralproject/talk](https://badges.gitter.im/coralproject/talk.svg)](https://gitter.im/coralproject/talk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Getting started
 
 Clone this repo and run the launch script.
